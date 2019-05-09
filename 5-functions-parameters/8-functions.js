@@ -8,6 +8,20 @@
 
 // Aquí tu código
 
+function convierteEurosEnPesetas(euros)
+{
+    if(typeof(euros)=='number')
+    {
+        var conversion=168;
+        return(euros*conversion)
+    }
+    else
+    {
+        Error = new Erros("convierteEurosEnPesetas debe recibir un number");
+        throw Error;
+    }
+    
+}
 // Hasta aquí
 
 

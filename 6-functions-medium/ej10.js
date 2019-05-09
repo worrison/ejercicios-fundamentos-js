@@ -13,7 +13,10 @@
 // Ha de pasar los test adjuntados.
 
 // Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
+function conCuantosParametrosMeHanEjecutado ()
+{
+    return arguments.length
+}
 // Hasta aquí.
 
 

@@ -33,3 +33,9 @@ let gente = [{
         edad: 10
     },
 ]
+/*filter*/
+var conJota=gente.filter(function(persona) 
+{
+    return persona.nombre[0] == "J";
+});
+console.log(conJota);

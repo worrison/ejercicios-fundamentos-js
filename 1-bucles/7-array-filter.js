@@ -34,4 +34,9 @@ let gente = [{
         edad: 10
     },
 ]
+var jotaMenorCuarenta=gente.filter(function(persona) 
+{
+    return persona.nombre[0]=="J" && persona.edad<40;
+});
+console.log(jotaMenorCuarenta);
 

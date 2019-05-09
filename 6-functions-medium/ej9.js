@@ -11,13 +11,35 @@
 
 // Ha de pasar los test adjuntados.
 
-let extraerAcronimo = (...input) => {
+/*let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-   
+    if(typeof(arguments)=="object")
+    {
+        for (var palabra of input) 
+        {
+            acronimo=acronimo+palabra[0];
+        }
+    }
+        
     // Hasta aquí.
     return acronimo;
+}*/
+/*map */
+let extraerAcronimo = (...input) => {
+    var acronimo = input.map(function(valor) {
+        //console.log(typeof(valor));
+        if(typeof(valor)=="string")
+        {
+            return valor[0];
+        }
+        else{
+        }
+    })
+    return(acronimo.join(""));
+    //console.log(acronimo.join(""));
 }
+
 
 
 let test = require('../test.js');

@@ -10,13 +10,44 @@
 
 // Ha de pasar los test adjuntados.
 
-let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
+
+/*con map*/
+var transformaArrayEnOtraConSusLongitudes = function(arrayDeStrings) {
+
+    if (typeof(arrayDeStrings) === "object" && arrayDeStrings.length >= 0)
+    {
+        var arrayDeLongitudes = arrayDeStrings.map(function(valor) {
+            return valor.length;
+            });
+    }
+    else{
+        return ("Debo ser ejecutada con un array");
+    }
+    return arrayDeLongitudes;
+ };
+
+
+
+
+
+
+/*let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
 
+     
+        if (typeof(arrayDeStrings) === "object" && arrayDeStrings.length >= 0)
+        {
+            for (var valor of arrayDeStrings) {
+                arrayDeLongitudes.push(valor.length);
+            }
+        }
+        else{
+            return ("Debo ser ejecutada con un array");
+        }
     // Hasta aquí.
     return arrayDeLongitudes
-}
+}*/
 
 
 let test = require('../test.js');

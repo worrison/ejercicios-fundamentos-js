@@ -15,9 +15,10 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 }
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
-
-
-
+//con el map
+var dobleArr = arr.map(function(x) {
+    return x * 2;
+ });
 
 // Hasta aquí
 console.log('El array nuevo es:  doubleArr =', dobleArr);
