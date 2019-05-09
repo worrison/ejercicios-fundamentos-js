@@ -43,7 +43,6 @@ let extraerAcronimo = (...input) => {
 
 
 let test = require('../test.js');
-
 test(extraerAcronimo, ['Estudiante', 'Del', 'Bootcamp', 'Fullstack', 'Geekshubs'], 'EDBFG');
 test(extraerAcronimo, ['hola', 'caracola'], 'hc');
 test(extraerAcronimo, ['33', '44',' '], '34 ');
