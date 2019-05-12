@@ -33,6 +33,16 @@ let gente = [{
         edad: 10
     },
 ]
+/*modo normal*/
+var conJota=new Array();
+for(i = 0; i < gente.length; i++)
+{
+    if(gente[i].nombre.charAt(0)==="J")
+    {
+        conJota.push(gente[i].nombre);
+    }
+}
+console.log(conJota);
 /*filter*/
 var conJota=gente.filter(function(persona) 
 {

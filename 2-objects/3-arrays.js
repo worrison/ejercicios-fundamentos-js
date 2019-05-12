@@ -5,7 +5,18 @@
 
 
 // Aquí tu código
-
+var arr = [[], [], []];
+arr[1]={
+    name:"pepito",
+    age:25,}
+arr[0]={
+        name:"pepito",
+        age:25,
+    }
+    arr[2]={
+        name:"Jose",
+        age:22,
+    }
 
 // Hasta aquí
 

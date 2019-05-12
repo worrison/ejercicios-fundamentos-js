@@ -5,8 +5,23 @@
 
 let esPalindromo= (palabra) => {
     // Aquí tu código.  Desde aquí:
+    if(palabra!="" && typeof palabra=="string") 
+    {   
+        palArray=palabra.split("");//transformor string en array
+        palArray.reverse();//doy la vuelta
+        palArray=palArray.join('');//convierto en string
+        console.log(palArray);
+        return palabra==palArray
+        {
+            return true;
+        }
+    }
+    else
+    {
+        return "no es un formato correcto";
+    }
     //Hasta aqui.
-}
+} 
 
 
 let test = require('../test.js');

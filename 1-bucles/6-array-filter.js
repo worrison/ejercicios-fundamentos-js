@@ -32,6 +32,16 @@ let gente = [{
         edad: 10
     },
 ]
+/*normal*/
+var conCuatroLetras=new Array();
+for(i = 0; i < gente.length; i++)
+{
+    if(gente[i].nombre.length === 4)
+    {
+        conCuatroLetras.push(gente[i].nombre);
+    }
+}
+console.log(conCuatroLetras);
 /*filter*/
 var cuatroLetras=gente.filter(function(persona) 
 {

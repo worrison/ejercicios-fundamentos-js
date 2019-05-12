@@ -5,7 +5,14 @@
 
 
 // Aquí tu código
-
+var obj={
+    a:{
+                        b: true,
+                        c:[0,9],
+                    },
+    d: 7,
+    f:"stri",
+};
 // Hasta aquí
 
 // TEST 1

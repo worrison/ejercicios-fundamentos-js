@@ -34,6 +34,17 @@ let gente = [{
         edad: 10
     },
 ]
+/*normal*/
+var conJota=new Array();
+for(i = 0; i < gente.length; i++)
+{
+    if(gente[i].nombre.charAt(0)==="J" &&  gente[i].edad <40)
+    {
+        conJota.push(gente[i].nombre);
+    }
+}
+console.log(conJota);
+/*filter*/
 var jotaMenorCuarenta=gente.filter(function(persona) 
 {
     return persona.nombre[0]=="J" && persona.edad<40;

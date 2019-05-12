@@ -33,7 +33,16 @@ let gente = [{
         edad: 10
     },
 ]
-
+/*modo normal*/
+var mayores=new Array();
+for(i = 0; i < gente.length; i++)
+{
+    if(gente[i].edad >25)
+    {
+        mayores.push(gente[i].edad);
+    }
+}
+console.log(mayores);
 /*filter*/
 var mayores=gente.filter(function(persona) 
 {

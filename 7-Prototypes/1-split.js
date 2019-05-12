@@ -15,10 +15,6 @@ let getCiudadesOrdenadas= (ciudades) => {
     {
         return ciudades.split(", ").sort();
     }
-    
-
-
-
 }
     // Hasta aquí.
 
