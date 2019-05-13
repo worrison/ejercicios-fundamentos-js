@@ -5,7 +5,7 @@
 
 
 // Aquí tu código
-var arr = [[], [], []];
+let arr = [[], [], []];
 arr[1]={
     name:"pepito",
     age:25,}

@@ -5,7 +5,7 @@
 
 
 // Aquí tu código
-var obj={
+let obj={
     a:{
                         b: true,
                         c:[0,9],

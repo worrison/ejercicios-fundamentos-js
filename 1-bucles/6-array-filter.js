@@ -33,8 +33,8 @@ let gente = [{
     },
 ]
 /*normal*/
-var conCuatroLetras=new Array();
-for(i = 0; i < gente.length; i++)
+let conCuatroLetras=new Array();
+for(let i = 0; i < gente.length; i++)
 {
     if(gente[i].nombre.length === 4)
     {
@@ -43,8 +43,12 @@ for(i = 0; i < gente.length; i++)
 }
 console.log(conCuatroLetras);
 /*filter*/
-var cuatroLetras=gente.filter(function(persona) 
+let cuatroLetras=gente.filter(function(persona) 
 {
     return persona.nombre.length == 4;
 });
+console.log(cuatroLetras);
+
+/*funcion flecha */
+let cuatroLetras=gente.filter(persona=> persona.nombre.length == 4);
 console.log(cuatroLetras);

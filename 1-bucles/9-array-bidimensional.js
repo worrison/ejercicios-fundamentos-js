@@ -7,10 +7,10 @@
 //   ['20','21','22']
 // ];
 
-var matriz=[[],[],[]]
-for(i=0; i<3; i++)
+let matriz=[[],[],[]]
+for(let i=0; i<3; i++)
 {
-    for(j=0; j<3; j++)
+    for(let j=0; j<3; j++)
     {
         matriz[i][j]=""+i+j;
     }

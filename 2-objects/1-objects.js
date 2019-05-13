@@ -6,7 +6,7 @@
 
 // Aquí tu código
 
-var ordenador={
+let ordenador={
 
     marca:"La pava",
     tipo:"portátil",

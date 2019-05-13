@@ -1,6 +1,6 @@
 /*PIRAMIDE*/
-var baseMaxima=50,base,caracter="*",espacio=" ",piramide="";
-for(var i=0; i<baseMaxima; i=i+2)
+let baseMaxima=50,base,caracter="*",espacio=" ",piramide="";
+for(var i=0; i<baseMaxima; i+=2)
 {   
     var cantidadEspacios=(baseMaxima-i)/2;
     base=i+1;

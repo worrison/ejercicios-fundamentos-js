@@ -35,8 +35,8 @@ let gente = [{
     },
 ]
 /*normal*/
-var conJota=new Array();
-for(i = 0; i < gente.length; i++)
+let conJota=new Array();
+for(let i = 0; i < gente.length; i++)
 {
     if(gente[i].nombre.charAt(0)==="J" &&  gente[i].edad <40)
     {
@@ -45,9 +45,11 @@ for(i = 0; i < gente.length; i++)
 }
 console.log(conJota);
 /*filter*/
-var jotaMenorCuarenta=gente.filter(function(persona) 
+let jotaMenorCuarenta=gente.filter(function(persona) 
 {
     return persona.nombre[0]=="J" && persona.edad<40;
 });
 console.log(jotaMenorCuarenta);
-
+/*Funcion flecha*/
+let jotaMenorCuarenta=gente.filter(persona=>persona.nombre[0]=="J" && persona.edad<40);
+console.log(jotaMenorCuarenta);

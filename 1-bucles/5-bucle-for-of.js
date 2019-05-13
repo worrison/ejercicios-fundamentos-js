@@ -34,8 +34,8 @@ let gente = [{
     },
 ]
 /*modo normal*/
-var conJota=new Array();
-for(i = 0; i < gente.length; i++)
+let conJota=new Array();
+for(let i = 0; i < gente.length; i++)
 {
     if(gente[i].nombre.charAt(0)==="J")
     {
@@ -43,9 +43,14 @@ for(i = 0; i < gente.length; i++)
     }
 }
 console.log(conJota);
+
 /*filter*/
-var conJota=gente.filter(function(persona) 
+let conJota=gente.filter(function(persona) 
 {
     return persona.nombre[0] == "J";
 });
+console.log(conJota);
+
+/*function flecha */
+let conJota=gente.filter(persona=>persona.nombre[0] =="J")
 console.log(conJota);

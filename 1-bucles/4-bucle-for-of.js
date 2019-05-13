@@ -34,8 +34,8 @@ let gente = [{
     },
 ]
 /*modo normal*/
-var mayores=new Array();
-for(i = 0; i < gente.length; i++)
+let mayores=new Array();
+for(let i = 0; i < gente.length; i++)
 {
     if(gente[i].edad >25)
     {
@@ -44,7 +44,7 @@ for(i = 0; i < gente.length; i++)
 }
 console.log(mayores);
 /*filter*/
-var mayores=gente.filter(function(persona) 
+let mayores=gente.filter(function(persona) 
 {
     return persona.edad >= 25;
 });
